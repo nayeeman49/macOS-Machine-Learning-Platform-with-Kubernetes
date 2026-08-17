@@ -1,0 +1,14 @@
+artifact_uri: file:///private/var/root/gpu-ml-platform-macos/mlruns/967788908605454921/a94958deb60b487185918c44fb8f6ef4/artifacts
+end_time: 1786909653064
+entry_point_name: ''
+experiment_id: '967788908605454921'
+lifecycle_stage: active
+run_id: a94958deb60b487185918c44fb8f6ef4
+run_name: rambunctious-yak-852
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1786909550062
+status: 3
+tags: []
+user_id: root

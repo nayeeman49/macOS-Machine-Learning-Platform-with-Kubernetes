@@ -1,0 +1,5 @@
+Architecture:
+- macOS M1 Max local cluster
+- Docker Desktop with Kubernetes
+- MLflow, Prometheus, Grafana
+- PyTorch trainer using Apple MPS backend

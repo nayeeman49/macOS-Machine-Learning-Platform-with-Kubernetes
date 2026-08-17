@@ -1,0 +1,6 @@
+artifact_location: file:///private/var/root/gpu-ml-platform-macos/mlruns/967788908605454921
+creation_time: 1786908418277
+experiment_id: '967788908605454921'
+last_update_time: 1786908418277
+lifecycle_stage: active
+name: macos-mps-training

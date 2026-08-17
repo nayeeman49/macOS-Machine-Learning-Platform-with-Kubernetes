@@ -1,0 +1,7 @@
+{
+  "dashboard": "Training Metrics",
+  "panels": [
+    {"title": "Training Loss", "type": "graph"},
+    {"title": "CPU Usage", "type": "graph"}
+  ]
+}

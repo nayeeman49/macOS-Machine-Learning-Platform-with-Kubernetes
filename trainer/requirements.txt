@@ -1,0 +1,5 @@
+torch
+torchvision
+torchaudio
+mlflow
+prometheus_client
