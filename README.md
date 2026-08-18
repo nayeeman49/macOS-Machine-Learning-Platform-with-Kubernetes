@@ -170,13 +170,4 @@ MIT License (or whichever you choose)
 
 ---
 
-## 🔥 Want me to generate the images?
 
-I can create:
-
-- Architecture diagram  
-- Trainer dashboard preview  
-- Cluster dashboard preview  
-- System metrics preview  
-
-Just tell me which ones you want, and I’ll generate them in a GitHub‑ready format.
