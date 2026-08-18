@@ -1,0 +1,14 @@
+# Datasets
+data/
+*.tar.gz
+*.zip
+
+# MLflow
+mlruns/
+
+# Python venv
+gpu-ml-env/
+venv/
+
+# macOS
+.DS_Store
