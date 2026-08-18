@@ -1,19 +1,3 @@
-Absolutely, Nayeem — I can help you add **tables and images** to your GitHub README.  
-Since your current tab is your GitHub repo’s main page   [github.com](https://github.com/nayeeman49/gpu-ml-platform-macos/tree/main), I’ll craft a README that fits your project and uses GitHub‑friendly Markdown.
-
-Below is a **clean, professional README** with:
-
-- Project overview  
-- Architecture diagram (image placeholder)  
-- Tables for components  
-- Metrics dashboard previews  
-- How to run your platform  
-- How to monitor Kubernetes + trainer  
-
-You can paste this directly into your `README.md`.
-
----
-
 # 📘 GPU‑ML Platform (macOS)
 
 A fully containerized machine‑learning training platform running on **Kubernetes**, with integrated **Prometheus**, **Grafana**, and **MLflow** for complete observability.
