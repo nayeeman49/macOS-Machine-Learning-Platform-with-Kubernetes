@@ -1,0 +1,14 @@
+artifact_uri: file:///private/var/root/gpu-ml-platform-macos/mlruns/967788908605454921/976c2b248f7346b29991e1eb2d59068c/artifacts
+end_time: 1786997215127
+entry_point_name: ''
+experiment_id: '967788908605454921'
+lifecycle_stage: active
+run_id: 976c2b248f7346b29991e1eb2d59068c
+run_name: peaceful-wasp-788
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1786997210280
+status: 3
+tags: []
+user_id: root

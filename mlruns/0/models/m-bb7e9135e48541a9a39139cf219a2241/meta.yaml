@@ -1,0 +1,10 @@
+artifact_location: file:///private/var/root/gpu-ml-platform-macos/mlruns/0/models/m-bb7e9135e48541a9a39139cf219a2241/artifacts
+creation_timestamp: 1786999116252
+experiment_id: '0'
+last_updated_timestamp: 1786999116258
+model_id: m-bb7e9135e48541a9a39139cf219a2241
+model_type: null
+name: model
+source_run_id: null
+status: 3
+status_message: null

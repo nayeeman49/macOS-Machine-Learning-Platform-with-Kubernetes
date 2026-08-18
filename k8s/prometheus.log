@@ -6,4 +6,20 @@ Handling connection for 9090
 Handling connection for 9090
 Handling connection for 9090
 Handling connection for 9090
-sted ports: [{9090 9090}]
+Handling connection for 9090
+Handling connection for 9090
+Handling connection for 9090
+Handling connection for 9090
+Handling connection for 9090
+Handling connection for 9090
+Handling connection for 9090
+Handling connection for 9090
+Handling connection for 9090
+Handling connection for 9090
+Handling connection for 9090
+Handling connection for 9090
+Handling connection for 9090
+Handling connection for 9090
+Handling connection for 9090
+E0817 21:07:23.504732   64128 portforward.go:522] "Unhandled Error" err="an error occurred forwarding 9090 -> 9090: error forwarding port 9090 to pod d42cbda5c42e22954367580fefa0b526c1ab17353a48379673eaac75a59065ab, uid : network namespace for sandbox \"d42cbda5c42e22954367580fefa0b526c1ab17353a48379673eaac75a59065ab\" is closed"
+error: lost connection to pod

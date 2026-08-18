@@ -1,0 +1,14 @@
+artifact_uri: file:///private/var/root/gpu-ml-platform-macos/mlruns/967788908605454921/4d52748184c040a3ae4b1eb820369dda/artifacts
+end_time: 1786999359041
+entry_point_name: ''
+experiment_id: '967788908605454921'
+lifecycle_stage: active
+run_id: 4d52748184c040a3ae4b1eb820369dda
+run_name: bold-newt-41
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1786999270138
+status: 3
+tags: []
+user_id: root

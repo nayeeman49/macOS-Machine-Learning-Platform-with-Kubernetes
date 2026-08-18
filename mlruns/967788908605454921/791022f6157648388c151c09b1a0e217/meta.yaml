@@ -1,0 +1,14 @@
+artifact_uri: file:///private/var/root/gpu-ml-platform-macos/mlruns/967788908605454921/791022f6157648388c151c09b1a0e217/artifacts
+end_time: 1786998239179
+entry_point_name: ''
+experiment_id: '967788908605454921'
+lifecycle_stage: active
+run_id: 791022f6157648388c151c09b1a0e217
+run_name: nosy-croc-816
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1786998151074
+status: 3
+tags: []
+user_id: root

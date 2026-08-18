@@ -6,10 +6,33 @@ data:
   prometheus.yml: |
     global:
       scrape_interval: 15s
+
     scrape_configs:
       - job_name: 'prometheus'
         static_configs:
           - targets: ['prometheus:9090']
+
+      - job_name: 'trainer'
+        static_configs:
+          - targets: ['host.docker.internal:8000']
+
+      - job_name: 'kubernetes-nodes'
+        kubernetes_sd_configs:
+          - role: node
+        relabel_configs:
+          - action: labelmap
+            regex: __meta_kubernetes_node_label_(.+)
+
+      - job_name: 'kubernetes-pods'
+        kubernetes_sd_configs:
+          - role: pod
+        relabel_configs:
+          - action: labelmap
+            regex: __meta_kubernetes_pod_label_(.+)
+
+      - job_name: 'kube-state-metrics'
+        static_configs:
+          - targets: ['kube-state-metrics.kube-system.svc.cluster.local:8080']
 ---
 apiVersion: apps/v1
 kind: Deployment
@@ -50,3 +73,4 @@ spec:
     - port: 9090
       targetPort: 9090
       nodePort: 30900
+

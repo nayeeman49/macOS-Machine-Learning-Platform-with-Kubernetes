@@ -1,0 +1,14 @@
+artifact_uri: file:///private/var/root/gpu-ml-platform-macos/mlruns/967788908605454921/791098c0acc341ebb10dbd63c5950de7/artifacts
+end_time: 1786997122984
+entry_point_name: ''
+experiment_id: '967788908605454921'
+lifecycle_stage: active
+run_id: 791098c0acc341ebb10dbd63c5950de7
+run_name: rogue-fowl-482
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1786997026114
+status: 3
+tags: []
+user_id: root
