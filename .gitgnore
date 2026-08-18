@@ -1,0 +1,22 @@
+# Python venv
+gpu-ml-env/
+venv/
+.env/
+
+# macOS system files
+.DS_Store
+
+# Data files
+data/
+datasets/
+*.tar.gz
+*.zip
+
+# PyTorch / MLflow large artifacts
+*.pt
+*.pth
+mlruns/
+models/
+
+# Kubernetes logs
+*.log
