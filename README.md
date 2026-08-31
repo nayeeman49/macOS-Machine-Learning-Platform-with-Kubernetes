@@ -1,8 +1,7 @@
 
 # 📘 macOS Machine Learning Platform with Kubernetes
 
-A fully containerized machine‑learning training platform built on **Kubernetes**, featuring **Prometheus**, **Grafana**, and **MLflow** for complete observability.  
-The system provides an end‑to‑end workflow for training models, tracking experiments, and monitoring both application and system‑level metrics — all running locally on macOS. It is being hosted locally and eligible for any Arm based MacOS device, in my case my m1 max macbook pro
+A fully containerized machine‑learning training platform built on **Kubernetes**, featuring **Prometheus**, **Grafana**, and **MLflow** for complete observability.  The system provides an end‑to‑end workflow for training models, tracking experiments, and monitoring both application and system‑level metrics — all running locally on macOS. It is being hosted locally and eligible for any Arm based MacOS device, in my case my m1 max macbook pro. The project is ongoing. 
 
 ---
 
