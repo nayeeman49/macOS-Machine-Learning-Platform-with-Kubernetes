@@ -1,20 +1,33 @@
+
 # 📘 GPU‑ML Platform (macOS)
 
-A fully containerized machine‑learning training platform running on **Kubernetes**, with integrated **Prometheus**, **Grafana**, and **MLflow** for complete observability.
-
-This project lets you train models, monitor system performance, track metrics, and visualize cluster health — all from your macOS environment.
+A fully containerized machine‑learning training platform built on **Kubernetes**, featuring **Prometheus**, **Grafana**, and **MLflow** for complete observability.  
+The system provides an end‑to‑end workflow for training models, tracking experiments, and monitoring both application and system‑level metrics — all running locally on macOS.
 
 ---
 
 ## 🖼️ Architecture Overview
 
-Add an image to your repo (e.g., `docs/architecture.png`) and reference it:
+### **Platform Architecture**
 
-```md
-![Architecture](docs/architecture.png)
-```
+This diagram outlines the core components of the platform:
+Main tree concept:
+<img width="618" height="720" alt="image" src="https://github.com/user-attachments/assets/f2be2eb1-0f32-4e0a-b350-2c9f1cb0de81" />
 
-If you want, I can generate a full architecture diagram for you.
+- Kubernetes workloads (Trainer, Prometheus, Grafana, MLflow)  
+- macOS system metrics via node‑exporter  
+- Prometheus scraping pipeline  
+- Grafana dashboards  
+- MLflow experiment tracking  
+
+---
+
+## 📁 Repository Structure Diagram
+
+### **Repo Tree**
+`[Looks like the result wasn't safe to show. Let's switch things up and try something else!]`
+
+A visual overview of the repository layout, showing how training code, Kubernetes manifests, monitoring configurations, and documentation fit together.
 
 ---
 
@@ -22,38 +35,34 @@ If you want, I can generate a full architecture diagram for you.
 
 | Folder | Description |
 |--------|-------------|
-| `trainer/` | Python training scripts, metrics endpoints |
-| `monitoring/` | Prometheus + Grafana configs |
-| `k8s/` | Kubernetes manifests (Deployments, Services, ConfigMaps) |
-| `docs/` | Diagrams, notes, dashboard screenshots |
-| `mlruns/` | MLflow experiment tracking (ignored in Git) |
-| `makefile` | Automation for port‑forwarding and cluster setup |
+| `trainer/` | Model training code, Dockerfile, MLflow integration |
+| `monitoring/` | Prometheus rules, Grafana dashboards |
+| `k8s/` | Kubernetes manifests for all platform components |
+| `docs/` | Architecture diagrams, setup notes, dashboard screenshots |
+| `mlruns/` | MLflow experiment artifacts (local only) |
+| `makefile` | Automation for port‑forwarding and cluster startup |
 
 ---
 
 ## 📊 Monitoring Dashboards
 
 ### **Trainer Metrics Dashboard**
-Add an image:
+`[Looks like the result wasn't safe to show. Let's switch things up and try something else!]`
 
-```md
-![Trainer Dashboard](docs/trainer-dashboard.png)
-```
+Includes:
 
-Shows:
 - Training loss  
-- Training accuracy  
+- Accuracy  
 - Epoch timing  
 - Model performance curves  
 
 ---
 
 ### **Kubernetes Cluster Dashboard**
-```md
-![Cluster Dashboard](docs/cluster-dashboard.png)
-```
+`[Looks like the result wasn't safe to show. Let's switch things up and try something else!]`
 
-Shows:
+Visualizes:
+
 - Node CPU / memory  
 - Pod restarts  
 - Namespace usage  
@@ -62,11 +71,10 @@ Shows:
 ---
 
 ### **System Metrics (macOS Exporter)**
-```md
-![System Metrics](docs/system-metrics.png)
-```
+`[Looks like the result wasn't safe to show. Let's switch things up and try something else!]`
 
-Shows:
+Tracks:
+
 - CPU temperature  
 - GPU temperature  
 - Fan speed  
@@ -74,15 +82,15 @@ Shows:
 
 ---
 
-## ⚙️ How to Run the Platform
+## ⚙️ Running the Platform
 
-### 1. Start Kubernetes services
+### 1. Deploy all Kubernetes workloads
 
 ```bash
 kubectl apply -f k8s/
 ```
 
-### 2. Start Prometheus
+### 2. Start Prometheus (background)
 
 ```bash
 nohup kubectl port-forward deployment/prometheus 9090:9090 > prometheus.log 2>&1 &
@@ -116,13 +124,13 @@ nohup kubectl port-forward deployment/mlflow 5000:5000 > mlflow.log 2>&1 &
 
 ## 🚀 Trainer API
 
-Your trainer exposes metrics at:
+The trainer exposes Prometheus metrics at:
 
 ```
 http://localhost:8000/metrics
 ```
 
-Prometheus scrapes this automatically.
+These metrics are scraped automatically by Prometheus and visualized in Grafana.
 
 ---
 
@@ -141,14 +149,14 @@ Prometheus scrapes this automatically.
 
 ## 📥 Installation
 
-Clone the repo:
+Clone the repository:
 
 ```bash
 git clone https://github.com/nayeeman49/gpu-ml-platform-macos.git
 cd gpu-ml-platform-macos
 ```
 
-Create venv:
+Create a Python environment:
 
 ```bash
 python3.11 -m venv gpu-ml-env
@@ -158,16 +166,23 @@ pip install -r trainer/requirements.txt
 
 ---
 
-## 🧹 .gitignore (included)
+## 🧹 .gitignore
 
-Your repo is now clean and safe for GitHub.
+The repository includes a `.gitignore` to keep logs, datasets, MLflow artifacts, and runtime files out of version control.
 
 ---
 
 ## 📄 License
 
-MIT License (or whichever you choose)
+MIT License (or another license of your choice).
 
 ---
 
+If you want, I can also generate:
 
+- a **clean architecture PNG** for your repo  
+- a **training pipeline diagram**  
+- a **Kubernetes autoscaling diagram**  
+- a **GPU metrics architecture diagram**  
+
+Just tell me which one you want next.
