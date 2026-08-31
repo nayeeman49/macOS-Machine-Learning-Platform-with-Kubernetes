@@ -1,0 +1,54 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: trainer
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: trainer
+  template:
+    metadata:
+      labels:
+        app: trainer
+    spec:
+      containers:
+        - name: trainer
+          image: trainer:latest
+          imagePullPolicy: Never
+          command: ["python3", "train.py"]
+          workingDir: /app
+
+          # -----------------------------
+          # STEP 1: Resource Requests/Limits
+          # -----------------------------
+          resources:
+            requests:
+              cpu: "250m"
+              memory: "512Mi"
+            limits:
+              cpu: "1"
+              memory: "1Gi"
+
+          volumeMounts:
+            - name: trainer-code
+              mountPath: /app
+      volumes:
+        - name: trainer-code
+          hostPath:
+            path: /Users/user/Documents/Projects/gpu-ml-platform-macos/trainer
+            type: Directory
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: trainer
+spec:
+  selector:
+    app: trainer
+  ports:
+    - protocol: TCP
+      port: 8080
+      targetPort: 8080
+
