@@ -24,6 +24,7 @@ This grafana dashboard references each trainer run:
 <img width="1275" height="664" alt="image" src="https://github.com/user-attachments/assets/2e9166bb-6679-4669-b89a-b9f85e9be499" />
 
 It feeds off data from metrics running the trainer:
+
 <img width="402" height="86" alt="image" src="https://github.com/user-attachments/assets/ddab7e47-87d6-4c8c-98ef-972837e9c9aa" />
 
 This is all being run by my local kubernetes cluster:
