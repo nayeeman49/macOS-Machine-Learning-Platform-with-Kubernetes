@@ -1,5 +1,5 @@
 
-# 📘 GPU‑ML Platform (macOS)
+# 📘 macOS Machine Learning Platform with Kubernetes
 
 A fully containerized machine‑learning training platform built on **Kubernetes**, featuring **Prometheus**, **Grafana**, and **MLflow** for complete observability.  
 The system provides an end‑to‑end workflow for training models, tracking experiments, and monitoring both application and system‑level metrics — all running locally on macOS.
@@ -22,10 +22,22 @@ Main tree concept:
 
 ---
 
+This grafana dashboard references each trainer run:
+<img width="1275" height="664" alt="image" src="https://github.com/user-attachments/assets/2e9166bb-6679-4669-b89a-b9f85e9be499" />
+
+It feeds off data from metrics running the trainer:
+<img width="402" height="86" alt="image" src="https://github.com/user-attachments/assets/ddab7e47-87d6-4c8c-98ef-972837e9c9aa" />
+
+This is all being run by my local kubernetes cluster:
+<img width="958" height="228" alt="image" src="https://github.com/user-attachments/assets/e4410966-4c14-48a7-ae9b-7108a190056f" />
+
+The device being used is my M1 Max Macbook pro which has sufficient power to enable some GPU autoscaling:
+<img width="4000" height="1848" alt="image" src="https://github.com/user-attachments/assets/552e9828-0fd8-4a95-b3c9-e53c5e20ab38" />
+
+
 ## 📁 Repository Structure Diagram
 
 ### **Repo Tree**
-`[Looks like the result wasn't safe to show. Let's switch things up and try something else!]`
 
 A visual overview of the repository layout, showing how training code, Kubernetes manifests, monitoring configurations, and documentation fit together.
 
@@ -59,7 +71,6 @@ Includes:
 ---
 
 ### **Kubernetes Cluster Dashboard**
-`[Looks like the result wasn't safe to show. Let's switch things up and try something else!]`
 
 Visualizes:
 
@@ -71,7 +82,6 @@ Visualizes:
 ---
 
 ### **System Metrics (macOS Exporter)**
-`[Looks like the result wasn't safe to show. Let's switch things up and try something else!]`
 
 Tracks:
 
@@ -177,12 +187,3 @@ The repository includes a `.gitignore` to keep logs, datasets, MLflow artifacts,
 MIT License (or another license of your choice).
 
 ---
-
-If you want, I can also generate:
-
-- a **clean architecture PNG** for your repo  
-- a **training pipeline diagram**  
-- a **Kubernetes autoscaling diagram**  
-- a **GPU metrics architecture diagram**  
-
-Just tell me which one you want next.
