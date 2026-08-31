@@ -9,8 +9,7 @@ A fully containerized machine‑learning training platform built on **Kubernetes
 
 ### **Platform Architecture**
 
-This diagram outlines the core components of the platform:
-Main tree concept:
+This diagram outlines the core components of the platform.
 <img width="618" height="720" alt="image" src="https://github.com/user-attachments/assets/f2be2eb1-0f32-4e0a-b350-2c9f1cb0de81" />
 
 - Kubernetes workloads (Trainer, Prometheus, Grafana, MLflow)  
