@@ -58,7 +58,6 @@ A visual overview of the repository layout, showing how training code, Kubernete
 ## 📊 Monitoring Dashboards
 
 ### **Trainer Metrics Dashboard**
-`[Looks like the result wasn't safe to show. Let's switch things up and try something else!]`
 
 Includes:
 
